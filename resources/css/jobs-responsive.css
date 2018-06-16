@@ -1,0 +1,9 @@
+#main h3, form, .job-list, #see-all-jobs {
+  grid-column: 1 / span 1;
+}
+form {
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: flex-end;
+  margin-bottom: 3.125rem;
+}

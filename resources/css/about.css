@@ -1,7 +1,7 @@
 /* About Page */
 
 .about h1 {
-  grid-column: 2 / span 6;
+  grid-column: 2 / span 12;
   width: 100%;
   padding: 10.5rem 0;
   background-image: url('../img/hero.png');
@@ -14,8 +14,8 @@
 
 }
 
-.about .information {
-  grid-column: 2 / span 6;
+.information {
+  grid-column: 2 / span 12;
   padding: 3.75rem 20% 6.75rem 20%;
   color: hsla(0, 0%, 29%, 1);
 }
