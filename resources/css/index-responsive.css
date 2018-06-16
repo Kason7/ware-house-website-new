@@ -1,0 +1,49 @@
+#main {
+  grid-template-rows: 50px 350px 80px 300px 300px 300px 300px 80px 300px 300px 300px 300px;
+  grid-row-gap: 10px;
+}
+.hero {
+  grid-column: 1 / span 1;
+  width: auto;
+}
+.shop-by-category { /*title*/
+  grid-column: 1 / span 1;
+  width: auto;
+}
+.product-category-living {
+  grid-column: 1 / span 1;
+  width: auto;
+  grid-row: 4 / span 1;
+}
+.product-category-dining {
+  grid-column: 1 / span 1;
+  grid-row: 5 / span 1;
+}
+.product-category-bedroom {
+  grid-column: 1 / span 1;
+    grid-row: 6 / span 1;
+}
+.product-category-bathroom {
+  grid-column: 1 / span 1;
+  grid-row: 7 / span 1;
+}
+.recently-viewed { /*Title*/
+  grid-column: 1 / span 1;
+  grid-row: 8 / span 1;
+}
+.product-item-chair {
+  grid-column: 1 / span 1;
+  grid-row: 9 / span 1;
+}
+.product-item-table {
+  grid-column: 1 / span 1;
+  grid-row: 10 / span 1;
+}
+.product-item-white {
+  grid-column: 1 / span 1;
+  grid-row: 11 / span 1;
+}
+.product-item-lamp {
+  grid-column: 1 / span 1;
+  grid-row: 12 / span 1;
+}

@@ -1,0 +1,54 @@
+#main {
+  text-align: left;
+  justify-items: auto;
+}
+
+.sell h3 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+form {
+  grid-column: 2 / span 12;
+  display: grid;
+  grid-template-areas: 'name name price quantity'
+                       'description description description description'
+                       '. . . submit';
+  font-size: inherit;
+}
+
+.form-input {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+select {
+  background-color: hsla(0, 0%, 100%, 1);
+  font-size: inherit;
+}
+
+textarea {
+  min-height: 12rem;
+  font-size: inherit;
+}
+
+#name {
+  grid-area: name;
+}
+
+#price {
+  grid-area: price;
+}
+
+#quantity {
+  grid-area: quantity;
+}
+
+#description {
+  grid-area: description;
+}
+
+#submit {
+  grid-area: submit;
+  justify-self: end;
+}

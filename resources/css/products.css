@@ -1,0 +1,7 @@
+.product-list {
+  grid-column: 2 / span 12;
+}
+
+.view-all-button {
+  grid-column: 2 / span 12;
+}
