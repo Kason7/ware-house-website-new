@@ -2,7 +2,7 @@
   padding: 10px
   margin: 0px;
   grid-template-columns: 100%;
-  offset: 0px 50px;
+  margin-top: 50px;
 }
 
 nav, .mobile-menu-bar, .mobile-menu, footer {
