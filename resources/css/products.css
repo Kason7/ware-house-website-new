@@ -4,4 +4,5 @@
 
 .view-all-button {
   grid-column: 2 / span 12;
+  box-shadow: 2px 2px 3px lightgrey;
 }
