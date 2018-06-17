@@ -1,9 +1,9 @@
-#main {
+#main, main {
   text-align: left;
   justify-items: auto;
 }
 
-#main h3, form, .job-list, #see-all-jobs {
+#main h3, main h3, form, .job-list, #see-all-jobs {
   grid-column: 2 / span 12;
 }
 
@@ -14,7 +14,7 @@ form {
   margin-bottom: 3.125rem;
 }
 
-#main form .button {
+#main form .button, main form .button {
   height: fit-content;
   padding: 1.14rem 0;
 }

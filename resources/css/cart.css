@@ -58,7 +58,7 @@ input {
   padding-bottom: 2rem;
 }
 
-#main .button {
+#main .button, main .button {
   box-sizing: border-box;
   padding: 0.875rem 5rem;
   border-radius: 54px;

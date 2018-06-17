@@ -5,61 +5,32 @@
 
   <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
   <link rel="stylesheet" type="text/css" href="resources/css/base.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/header.css">
   <link rel="stylesheet" type="text/css" href="resources/css/index.css">
-  <link rel="stylesheet" media="screen and (max-width: 600px)" href="resources/css/base-responsive.css">
-  <link rel="stylesheet" media="screen and (max-width: 600px)" href="resources/css/index-responsive.css">
+  <link rel="stylesheet" media="screen and (max-width: 1070px)" href="resources/css/base-responsive.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
 
   <title>WareHouse</title>
 
 </head>
+
 <body>
-  <div class="container">
 
-    <!-- Header -->
-    <div class="mobile-menu-bar">
-      <a href="index.html" class="image-container logo"><img src="resources/img/logo.png"></a>
-      <img class="menu-icon" src="resources/img/mobile-menu-icon.png">
-    </div>
+  <!-- Mobile header -->
 
-    <div class="mobile-menu">
-        <a href="deals.html">Today's Deals</a>
-        <a href="products.html">All Products</a>
-        <a href="about.html">About Us</a>
-        <a href="sell.html">Sell</a>
-        <a href="#">Help</a>
-        <a href="living.html">Living Room</a>
-        <a href="#">Bedroom</a>
-        <a href="#">Bathroom</a>
-        <a href="#">Dining Room</a>
-        <a href="#">Kitchen</a>
-        <a href="#">Lighting</a>
-        <a href="#">Office+Storage</a>
-        <a href="#">Patio</a>
-        <a href="#">Tools</a>
-        <a href="cart.html">Cart</a>
-    </div>
+  <div class="mobile-menu-bar">
+    <a href="index.html" class="image-container logo"><img src="resources/img/logo.png"></a>
+    <img class="menu-icon" src="resources/img/mobile-menu-icon.png">
+  </div>
 
-    <nav class="top-bar">
-      <ul>
-        <a href="deals.html">Today's Deals</a>
-        <a href="products.html">All Products</a>
-        <a href="about.html">About Us</a>
-        <a href="sell.html">Sell</a>
-        <a href="#">Help</a>
-      </ul>
-    </nav>
-    <header>
-      <div class="image-container">
-        <a href="index.html"><img src="resources/img/logo.png"></a>
-      </div>
-      <div class="search-bar">
-        <input type="text" name="search" placeholder="Search for items">
-        <a href="" class="icon"><img src="resources/img/search.svg"></a>
-      </div>
-      <a href="cart.html" class="button cart">Cart <img src="resources/img/cart.svg"></a>
-    </header>
-    <nav>
+  <div class="mobile-menu">
+      <h2>Get to know us</h2>
+      <a href="deals.html">Today's Deals</a>
+      <a href="products.html">All Products</a>
+      <a href="about.html">About Us</a>
+      <a href="sell.html">Sell</a>
+      <a href="#">Help</a>
+      <h2>Shop by Category</h2>
       <a href="living.html">Living Room</a>
       <a href="#">Bedroom</a>
       <a href="#">Bathroom</a>
@@ -69,55 +40,106 @@
       <a href="#">Office+Storage</a>
       <a href="#">Patio</a>
       <a href="#">Tools</a>
+      <h2>Checkout</h2>
+      <a href="cart.html">Cart</a>
+  </div>
+
+  <!-- Desktop Header -->
+
+  <header>
+
+    <!-- Top bar -->
+
+    <nav role="navigation" aria-label="secondary" class="top-bar">
+      <ul>
+        <a href="deals.html">Today's Deals</a>
+        <a href="products.html">All Products</a>
+        <a href="about.html">About Us</a>
+        <a href="sell.html">Sell</a>
+        <a href="#">Help</a>
+      </ul>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Header center -->
 
-    <div id="main" class="landing">
-
-      <div class="hero">
-        <h1>Shop Quality Furniture</h1>
+    <div class="header-center">
+      <div class="image-container">
+        <a href="index.html"><img alt="Ware House Logo" src="resources/img/logo.png"></a>
       </div>
+      <div aria-label="Search" class="search-bar">
+        <input type="text" name="search" placeholder="Search for items">
+        <a href="" class="icon"><img src="resources/img/search.svg"></a>
+      </div>
+      <a href="cart.html" class="button cart">Cart <img src="resources/img/cart.svg"></a>
+    </div>
 
-      <!-- Category section -->
+    <!-- Main menu -->
 
-      <div class="shop-by-category">
+    <nav role="navigation" aria-label="primary"  class="main-menu">
+      <ul class="menu-ul">
+        <a href="living.html">Living Room</a>
+        <a href="#">Bedroom</a>
+        <a href="#">Bathroom</a>
+        <a href="#">Dining Room</a>
+        <a href="#">Kitchen</a>
+        <a href="#">Lighting</a>
+        <a href="#">Office+Storage</a>
+        <a href="#">Patio</a>
+        <a href="#">Tools</a>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- Hero Section -->
+
+  <main>
+
+    <a href="products.html"  class="hero">
+      <h1>Shop Quality Furniture</h1>
+    </a>
+
+    <!-- Category section -->
+
+    <div class="category-list">
+
       <h2>Shop by category</h2>
-      </div>
 
-      <a href="living.html" class="product-category-living product-categories">
+      <a href="living.html" class="category-item">
         <div class="image-container">
-          <img src="resources/img/home/living-room.jpg">
-        </div>
-
-      </a>
-      <a href="#" class="product-category-bedroom product-categories">
-        <div class="image-container">
-          <img src="resources/img/home/bedroom.jpg">
-        </div>
-
-      </a>
-      <a href="#" class="product-category-bathroom product-categories">
-        <div class="image-container">
-          <img src="resources/img/home/bathroom.jpg">
-        </div>
-
-      </a>
-      <a href="#" class="product-category-dining product-categories">
-        <div class="image-container">
-          <img src="resources/img/home/dining-room.jpg">
+          <img src="resources/img/products/living-room.jpg">
         </div>
       </a>
 
-      <!-- Products section -->
-
-      <div class="recently-viewed">
-        <h2>Recently Viewed</h2>
-      </div>
-
-      <a href="#" class="product-item-chair product-items product-item">
+      <a href="#" class="category-item">
         <div class="image-container">
-          <img src="resources/img/home/yellow-chair.jpg">
+          <img src="resources/img/products/bedroom.jpg">
+        </div>
+      </a>
+
+      <a href="#" class="category-item">
+        <div class="image-container">
+          <img src="resources/img/products/bathroom.jpg">
+        </div>
+      </a>
+
+      <a href="#" class="category-item">
+        <div class="image-container">
+          <img src="resources/img/products/dining-room.jpg">
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Products section -->
+
+    <div class="product-list">
+
+      <h2>Recently Viewed</h2>
+
+      <a href="#" class="product-item">
+        <div class="image-container">
+          <img src="resources/img/chairs/yellow-chair.jpg">
         </div>
         <div class="description">
           <h3>Yellow Chair</h3>
@@ -125,19 +147,19 @@
         </div>
       </a>
 
-      <a href="#" class="product-item-table product-items product-item">
+      <a href="#" class="product-item">
         <div class="image-container">
-          <img src="resources/img/home/round-table.jpg">
+          <img src="resources/img/tables/coffee-table.jpg">
         </div>
         <div class="description">
-          <h3>Round Table</h3>
-          <span class="price">$249</span>
+          <h3>Coffee Table</h3>
+          <span class="price">$499</span>
         </div>
       </a>
 
-      <a href="#" class="product-item-white product-items product-item">
+      <a href="#" class="product-item">
         <div class="image-container">
-          <img src="resources/img/home/white-chair.jpg">
+          <img src="resources/img/chairs/white-chair.jpg">
         </div>
         <div class="description">
           <h3>White Chair</h3>
@@ -145,47 +167,47 @@
         </div>
       </a>
 
-      <a href="#" class="product-item-lamp product-items product-item">
+      <a href="#" class="product-item">
         <div class="image-container">
-          <img src="resources/img/home/desk-lamp.jpg">
+          <img src="resources/img/sofas/charcoal-sofa.jpg">
         </div>
         <div class="description">
-          <h3>Desk Lamp</h3>
-          <span class="price">$25</span>
+          <h3>Charcoal Sofa</h3>
+          <span class="price">$799</span>
         </div>
       </a>
-
     </div>
+  </main>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src='resources/js/main.js'></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src='resources/js/main.js'></script>
 
-    <!-- Footer -->
+  <!-- Footer -->
 
-    <footer>
-      <img src="resources/img/logo-2.png">
-      <div class="links">
-        <h4>Get to know us</h4>
-        <a href="#">About us</a>
-        <a href="jobs.html">Jobs</a>
-        <a href="#">Investor relations</a>
-        <a href="#">Link</a>
-      </div>
-      <div class="links">
-        <h4>Make money with us</h4>
-        <a href="sell.html">Sell on WareHouse</a>
-        <a href="#">Become a vendor</a>
-        <a href="#">Fundraiser events</a>
-        <a href="#">Community outreach</a>
-      </div>
-      <div class="links">
-        <h4>Help</h4>
-        <a href="#">Contact us</a>
-        <a href="#">Conditions of use</a>
-        <a href="#">Report a problem</a>
-        <a href="#">Privacy Policy</a>
-      </div>
-    </footer>
-  </div>
+  <footer>
+    <img alt="Ware House Logo" src="resources/img/logo.png">
+    <nav class="links">
+      <h4>Get to know us</h4>
+      <a href="about.html">About us</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="#">Investor relations</a>
+      <a href="#">Link</a>
+    </nav>
+    <nav class="links">
+      <h4>Make money with us</h4>
+      <a href="sell.html">Sell on WareHouse</a>
+      <a href="#">Become a vendor</a>
+      <a href="#">Fundraiser events</a>
+      <a href="#">Community outreach</a>
+    </nav>
+    <nav class="links">
+      <h4>Help</h4>
+      <a href="#">Contact us</a>
+      <a href="#">Conditions of use</a>
+      <a href="#">Report a problem</a>
+      <a href="#">Privacy Policy</a>
+    </nav>
+  </footer>
+
 </body>
 </html>

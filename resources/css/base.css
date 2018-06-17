@@ -14,8 +14,7 @@ a {
   transition: .3s;
 }
 
-
-a:hover {
+nav a:hover {
   color: black;
   text-decoration: underline;
 }
@@ -70,6 +69,11 @@ input {
   color: hsla(0, 100%, 100%, 1);
 }
 
+.view-all-button {
+  grid-column: 2 / span 12;
+  box-shadow: 2px 2px 3px lightgrey;
+}
+
 /* Reusable Component - Image Container */
 
 .image-container {
@@ -86,10 +90,14 @@ input {
 
 
 
-.product-list {
+.product-list, .category-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin-bottom: 3.75rem;
+}
+
+.category-list h2, .product-list h2 {
+  grid-column: 1 / span 4;
 }
 
 .product-category {
@@ -115,9 +123,9 @@ input {
   box-shadow: 2px 2px 3px lightgrey;
 }
 
-.product-item .description {
+.description {
   padding: 1.5rem;
-  text-align: left;
+  text-align: center;
 }
 
 .subcategories {
@@ -172,122 +180,20 @@ ul.breadcrumb li a {
 
 /* Site-Wide Grid */
 
-.container {
+body {
   display: grid;
-  grid-template-areas: 'top-bar'
-                       'header'
-                       'nav'
+  grid-template-areas: 'header'
                        'main'
                        'footer';
 }
 
 
-/* Header */
-
-.mobile-menu-bar, .mobile-menu {
-  display: none;
-  width: 100%
-}
-
-.top-bar {
-  grid-area: top-bar;
-  background-color: hsla(30, 100%, 90%, 1);
-  padding: 5px 0px;
-  justify-items: right;
-  display: grid;
-  grid-template-columns: 1fr 1200px 1fr;
-}
-.top-bar ul {
-  grid-column: 2 / span 1;
-  display: inline;
-}
-.top-bar ul a {
-  padding-left: 20px;
-}
-
-header {
-  grid-area: header;
-  display: grid;
-  grid-template-columns: 1fr repeat(3, 400px) 1fr;
-  align-items: center;
-  padding: 10px 0px;
-  font-size: inherit;
-  background-color: hsla(30, 100%, 90%, 1);
-}
-
-.image-container {
-  grid-column: 2 / span 1;
-}
-
-.search-bar {
-  grid-column: 3 / span 1;
-  border-radius: 33px 53px 33pzx 53px;
-  width: 100%;
-}
-
-.search-bar input {
-  flex-grow: 1;
-  border-top-right-radius: 0;
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 30px;
-}
-
-.search-bar .icon {
-  background-color: #E87A42;
-  border-radius: 0 53px 53px 0;
-  padding: 1rem;
-}
-
-.search-bar .icon img {
-  vertical-align: middle;
-}
-
-.cart {
-  justify-self: end;
-  display: flex;
-  align-items: center;
-  padding: .875rem 1rem;
-  border-radius: 54px;
-}
-
-.cart img {
-  padding-left: .625rem;
-}
-
-nav {
-  grid-area: nav;
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  justify-items: center;
-  background-color: hsla(30, 100%, 90%, 1);
-  padding: 1.313rem 10rem 1.313rem 10rem;
-  border-bottom: 1px solid hsla(30, 100%, 85%, 1);
-  box-shadow: 0px 2px 3px lightgrey;
-}
-
-nav a {
-  font-weight: bold;
-}
-
-nav a:active {
-  color: hsla(0, 0%, 70%, 1);
-}
-
-nav a:visted {
-  color: hsla(0, 0%, 29%, 1);
-}
-
-nav.top-bar {
-  border-bottom: 0px solid hsla(270, 78%, 85%, 1);
-}
-
 /* Main Section */
 
-#main {
+#main, main {
   grid-area: main;
   display: grid;
-  grid-template-columns: 1fr repeat(12, 90px) 1fr;
+  grid-template-columns: repeat(14, 1fr);
   grid-column-gap: 10px;
   justify-items: center;
   text-align: center;
@@ -295,22 +201,23 @@ nav.top-bar {
   padding: 20px;
 }
 
-#main h2 {
+#main h2, main h2 {
   grid-column: 2 / span 12;
   margin-bottom: 2rem;
 }
 
-#main .button {
+#main .button, main .button {
   box-sizing: border-box;
   width: 14.375rem;
   padding: .875rem 0;
 }
 
-.breadcrumb, .product-list {
+.breadcrumb {
   grid-column: 2 / span 12;
 }
 
-.product-list {
+.product-list, .category-list {
+  grid-column: 2 / span 12;
   column-gap: 10px;
   row-gap: 10px;
 }
@@ -320,7 +227,7 @@ nav.top-bar {
 footer {
   grid-area: footer;
   display: grid;
-  grid-template-columns: 1fr repeat(4, 300px) 1fr;
+  grid-template-columns: repeat(14, 1fr);
   padding: 20px 0px;
   background-color: #E87A42;
   border-top: 1px solid hsla(20, 78%, 52%, 1);
@@ -329,11 +236,12 @@ footer {
 footer img {
   align-self: center;
   justify-self: left;
-  grid-column: 2 / span 1;
+  grid-column: 2 / span 3;
 }
 
 footer .links {
   display: grid;
+  grid-column: span 3;
 }
 
 footer a {

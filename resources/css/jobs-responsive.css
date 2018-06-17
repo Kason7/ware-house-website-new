@@ -1,4 +1,4 @@
-#main h3, form, .job-list, #see-all-jobs {
+#main h3, main h3, form, .job-list, #see-all-jobs {
   grid-column: 1 / span 1;
 }
 form {
