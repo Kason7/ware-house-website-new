@@ -1,3 +1,3 @@
-$('.mobile-menu-bar').on('click', () => {
+$('.menu-icon').on('click', () => {
   $('.mobile-menu a').toggle();
 });

@@ -1,9 +1,7 @@
 #main {
-  grid-template-rows: 50px 300px 300px 300px 80px;
+  grid-template-rows: 50px 300px 300px 300px;
   grid-row-gap: 10px;
 }
-
-
 
 .subcategory-sofas {
   grid-column: 1 / span 1;

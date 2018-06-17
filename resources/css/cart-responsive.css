@@ -1,0 +1,30 @@
+.shopping-cart {
+  grid-column: 1 / span 1;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4, 200px);
+  padding: 0;
+  margin: 10px;
+  border: 0;
+}
+.row {
+  grid-column: 1 / span 1;
+  display: grid;
+  padding: 0;
+  margin: 10px;
+}
+.image-container, .description, img, .total, #main h2 {
+  grid-column: 1 / span 1;
+}
+.total {
+  grid-row: 4 / span 1;
+  border-left: 1px solid hsla(0, 0%, 85%, 1);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1rem 0rem;
+}
+.description {
+  padding: 0;
+  text-align: left;
+}

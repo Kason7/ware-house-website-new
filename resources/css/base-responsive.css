@@ -1,4 +1,10 @@
-#main, nav, .mobile-menu-bar, .mobile-menu, footer {
+#main {
+  padding: 10px
+  margin: 0px;
+  grid-template-columns: 100%;
+}
+
+nav, .mobile-menu-bar, .mobile-menu, footer {
   grid-template-columns: 100%;
   margin: 0px;
   padding: 0px;

@@ -1,13 +1,5 @@
-#main {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.product-list-section {
-  padding: 2rem 5rem 3.75rem 5rem;
-}
-
 .shopping-cart {
+  grid-column: 2 / span 12;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -71,24 +63,4 @@ input {
   padding: 0.875rem 5rem;
   border-radius: 54px;
   margin-left: 1rem;
-}
-
-@media only screen and (max-width: 1020px) {
-  .landing .product-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-
-@media only screen and (max-width: 760px) {
-  .landing .product-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-
-@media only screen and (max-width: 470px) {
-  .landing .product-list {
-    grid-template-columns: 1fr;
-  }
 }
