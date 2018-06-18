@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WareHouse</title>
+  <title>Grey Sofa | WareHouse</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
   <link rel="stylesheet" type="text/css" href="resources/css/base.css">
   <link rel="stylesheet" type="text/css" href="resources/css/header.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/single-product.css">
   <link rel="stylesheet" media="screen and (max-width: 1070px)" href="resources/css/base-responsive.css">
+  <link rel="stylesheet" media="screen and (max-width: 1070px)" href="resources/css/single-product-responsive.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
 </head>
-
 <body>
 
   <!-- Mobile header -->
@@ -87,50 +88,95 @@
 
   </header>
 
-  <!-- Tables Section -->
+  <!-- Product Section -->
 
-  <div id="main" class="product-list-section">
-    <ul class="breadcrumb">
-      <li><a href="products.html">All Products</a></li>
-      <li><a href="living.html">Living Room</a></li>
-      <li>Tables</li>
-    </ul>
+  <main id="main">
 
-    <div class="product-list">
+    <nav class="breadcrumb">
+      <ul class="breadcrumb">
+        <li><a href="products.html">All Products</a></li>
+        <li><a href="living.html">Living Room</a></li>
+        <li><a href="sofas.html">Sofas</a></li>
+        <li>Grey Sofa</li>
+      </ul>
+    </nav>
 
-      <a href="#" class="product-item card">
+    <article class="single-product-layout">
+
+      <div class="product-image">
         <div class="image-container">
-          <img src="resources/img/tables/nesting-tables.jpg">
+          <img src="resources/img/sofas/grey-sofa.jpg">
         </div>
-        <div class="description">
-          <h3>Nesting Tables</h3>
-          <span class="price">$199</span>
-        </div>
-      </a>
+      </div>
 
-      <a href="#" class="product-item card">
-        <div class="image-container">
-          <img src="resources/img/tables/side-table.jpg">
-        </div>
-        <div class="description">
-          <h3>Side Table</h3>
-          <span class="price">$299</span>
-        </div>
-      </a>
 
-      <a href="#" class="product-item card">
-        <div class="image-container">
-          <img src="resources/img/tables/coffee-table.jpg">
-        </div>
-        <div class="description">
-          <h3>Coffee Table</h3>
-          <span class="price">$499</span>
-        </div>
-      </a>
+      <div class="product-information">
 
-    </div>
+        <h1 class="single-product-title">Grey Sofa</h1>
 
-  </div>
+        <p class="single-product-text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+
+        <div class="button-add-to-cart">
+          <a href="#" class="button card">Add to Cart</a>
+        </div>
+
+      </div>
+
+      <div class="additional-info">
+        <h3>Product Description</h3>
+        <p>
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </p>
+      </div>
+    </article>
+
+    <section class="product-list">
+
+      <header class="related-products-title">
+        <h2>Related Products</h2>
+      </header>
+
+      <article class="product-item card">
+        <a href="product-grey-sofa.html">
+          <div class="image-container">
+            <img src="resources/img/sofas/grey-sofa.jpg">
+          </div>
+          <div class="description">
+            <h3>Grey Sofa</h3>
+            <span class="price">$499</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="product-item card">
+        <a href="#">
+          <div class="image-container">
+            <img src="resources/img/sofas/charcoal-sofa.jpg">
+          </div>
+          <div class="description">
+            <h3>Charcoal Sofa</h3>
+            <span class="price">$799</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="product-item card">
+        <a href="#">
+          <div class="image-container">
+            <img src="resources/img/sofas/white-sofa.jpg">
+          </div>
+          <div class="description">
+            <h3>White Sofa</h3>
+            <span class="price">$699</span>
+          </div>
+        </a>
+      </article>
+
+    </section>
+
+  </main>
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src='resources/js/main.js'></script>
@@ -161,5 +207,6 @@
       <a href="#">Privacy Policy</a>
     </div>
   </footer>
+
 </body>
 </html>

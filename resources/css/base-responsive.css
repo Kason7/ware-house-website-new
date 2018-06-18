@@ -14,7 +14,7 @@ nav, .mobile-menu-bar, .mobile-menu, footer {
   margin: 0px;
   padding: 0px;
 }
-.top-bar, header, nav, .mobile-menu a, .mobile-menu h2 {
+.top-bar, .site-header, nav, .mobile-menu a, .mobile-menu h2 {
   display: none;
 }
 
@@ -47,6 +47,7 @@ nav, .mobile-menu-bar, .mobile-menu, footer {
   top: 50px;
   background-color: white;
   margin-top: 5px;
+  z-index: 10;
 }
 .mobile-menu a, .mobile-menu h2 {
   padding: 10px;

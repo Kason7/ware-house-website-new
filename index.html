@@ -46,7 +46,7 @@
 
   <!-- Desktop Header -->
 
-  <header>
+  <header class="site-header">
 
     <!-- Top bar -->
 
@@ -75,8 +75,8 @@
 
     <!-- Main menu -->
 
-    <nav role="navigation" aria-label="primary"  class="main-menu">
-      <ul class="menu-ul">
+    <nav role="navigation" aria-label="primary" class="main-menu">
+      <ul>
         <a href="living.html">Living Room</a>
         <a href="#">Bedroom</a>
         <a href="#">Bathroom</a>
@@ -105,25 +105,25 @@
 
       <h2>Shop by category</h2>
 
-      <a href="living.html" class="category-item">
+      <a href="living.html" class="category-item card">
         <div class="image-container">
           <img src="resources/img/products/living-room.jpg">
         </div>
       </a>
 
-      <a href="#" class="category-item">
+      <a href="#" class="category-item card">
         <div class="image-container">
           <img src="resources/img/products/bedroom.jpg">
         </div>
       </a>
 
-      <a href="#" class="category-item">
+      <a href="#" class="category-item card">
         <div class="image-container">
           <img src="resources/img/products/bathroom.jpg">
         </div>
       </a>
 
-      <a href="#" class="category-item">
+      <a href="#" class="category-item card">
         <div class="image-container">
           <img src="resources/img/products/dining-room.jpg">
         </div>
@@ -133,50 +133,62 @@
 
     <!-- Products section -->
 
-    <div class="product-list">
+    <section class="product-list">
 
-      <h2>Recently Viewed</h2>
+      <header class="recently-viewed-title">
+        <h2>Recently Viewed</h2>
+      </header>
 
-      <a href="#" class="product-item">
-        <div class="image-container">
-          <img src="resources/img/chairs/yellow-chair.jpg">
-        </div>
-        <div class="description">
-          <h3>Yellow Chair</h3>
-          <span class="price">$189</span>
-        </div>
-      </a>
+      <article class="product-item card">
+        <a href="#">
+          <div class="image-container">
+            <img src="resources/img/chairs/yellow-chair.jpg">
+          </div>
+          <div class="description">
+            <h3>Yellow Chair</h3>
+            <span class="price">$189</span>
+          </div>
+        </a>
+      </article>
 
-      <a href="#" class="product-item">
-        <div class="image-container">
-          <img src="resources/img/tables/coffee-table.jpg">
-        </div>
-        <div class="description">
-          <h3>Coffee Table</h3>
-          <span class="price">$499</span>
-        </div>
-      </a>
+      <article class="product-item card">
+        <a href="#">
+          <div class="image-container">
+            <img src="resources/img/tables/coffee-table.jpg">
+          </div>
+          <div class="description">
+            <h3>Coffee Table</h3>
+            <span class="price">$499</span>
+          </div>
+        </a>
+      </article>
 
-      <a href="#" class="product-item">
-        <div class="image-container">
-          <img src="resources/img/chairs/white-chair.jpg">
-        </div>
-        <div class="description">
-          <h3>White Chair</h3>
-          <span class="price">$99</span>
-        </div>
-      </a>
+      <article class="product-item card">
+        <a href="#">
+          <div class="image-container">
+            <img src="resources/img/chairs/white-chair.jpg">
+          </div>
+          <div class="description">
+            <h3>White Chair</h3>
+            <span class="price">$99</span>
+          </div>
+        </a>
+      </article>
 
-      <a href="#" class="product-item">
-        <div class="image-container">
-          <img src="resources/img/sofas/charcoal-sofa.jpg">
-        </div>
-        <div class="description">
-          <h3>Charcoal Sofa</h3>
-          <span class="price">$799</span>
-        </div>
-      </a>
-    </div>
+      <article class="product-item card">
+        <a href="#">
+          <div class="image-container">
+            <img src="resources/img/sofas/charcoal-sofa.jpg">
+          </div>
+          <div class="description">
+            <h3>Charcoal Sofa</h3>
+            <span class="price">$799</span>
+          </div>
+        </a>
+      </article>
+
+    </section>
+
   </main>
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

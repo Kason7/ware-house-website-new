@@ -1,0 +1,35 @@
+.product-image {
+  grid-column: 2 / span 6;
+}
+.product-information {
+  grid-column: 8 / span 6;
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100%;
+}
+.product-information h1 {
+  text-align: left;
+}
+.additional-info {
+  grid-column: 2 / span 12;
+  padding-top: 20px;
+}
+.additional-info h3 {
+  padding: 20px;
+}
+.single-product-title {
+  grid-row: 1 / span 1;
+}
+.single-product-text {
+  grid-row: 2 / span 1;
+}
+.button-add-to-cart {
+  grid-row: 3 / span 1;
+}
+
+.single-product-layout {
+  grid-column: 2 / span 12;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+}

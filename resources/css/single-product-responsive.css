@@ -1,0 +1,13 @@
+.product-image, .breadcrumb, .single-product-layout {
+  grid-column: 1 / span 1;
+}
+.product-information {
+  grid-column: 1 / span 1;
+}
+.related-products, .product-list, .related-products-title h2, .additional-info, .product-list header {
+  grid-column: 1 / span 1;
+}
+.single-product-layout {
+  display: grid;
+  grid-template-columns: 100%;
+}
