@@ -4,10 +4,19 @@
 .product-information {
   grid-column: 1 / span 1;
 }
+.product-information h1 {
+  align-self: center;
+}
 .related-products, .product-list, .related-products-title h2, .additional-info, .product-list header {
   grid-column: 1 / span 1;
 }
 .single-product-layout {
   display: grid;
   grid-template-columns: 100%;
+}
+.button-add-to-cart {
+  display: inherit;
+}
+.button-add-to-cart a {
+  text-align: center;
 }

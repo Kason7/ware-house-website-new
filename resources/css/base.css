@@ -59,7 +59,7 @@ input {
   border-radius: 30px;
   background-color: #E87A42;
   text-align: center;
-  color: hsla(0, 0%, 93%, 1);
+  color: white;
   transition: .25s;
 }
 
@@ -71,6 +71,16 @@ input {
 .view-all-button {
   grid-column: 2 / span 12;
   box-shadow: 2px 2px 3px lightgrey;
+  width: 200px;
+  justify-self: center;
+  margin-top: 40px;
+  background-color: #7b110f;
+}
+.checkout-button {
+  background-color: #7b110f;
+}
+.job-search-button {
+  width: 200px;
 }
 
 /* Reusable Component - Image Container */

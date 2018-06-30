@@ -7,3 +7,6 @@ form {
   align-items: flex-end;
   margin-bottom: 3.125rem;
 }
+form #name, .job-list .job {
+  width: 100%;
+}
