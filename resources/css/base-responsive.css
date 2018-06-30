@@ -5,7 +5,7 @@
   margin-top: 50px;
 }
 
-h1, h2, #main h2, main h2, h3, h4, h5, h6, .view-all-button {
+h1, h2, #main h2, main h2, h3, h4, h5, h6, .view-all-button, main header {
   grid-column: 1 / span 1;
 }
 
@@ -62,10 +62,6 @@ nav, .mobile-menu-bar, .mobile-menu, footer {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
 }
-ul.breadcrumb {
-  margin: 10px;
-  padding: 0;
-}
 
 footer {
   grid-template-columns: 50% 50%;
@@ -90,7 +86,7 @@ footer .links {
   padding: 0px;
 }
 
-.product-list, .category-list, .category-list h2, .product-list h2 {
+.product-list, .category-list, .category-list h2, .product-list h2, .product-list header {
   grid-column: 1 / span 1;
   grid-template-columns: 100%;
 }

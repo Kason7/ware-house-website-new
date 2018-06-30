@@ -64,7 +64,6 @@ input {
 }
 
 .button:hover {
-
   background-color: Black - hsla(0, 0%, 13%, 1);
   color: hsla(0, 100%, 100%, 1);
 }
@@ -89,10 +88,10 @@ input {
 /* Reusable Component - Product and Category Lists */
 
 .product-list, .category-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 50px;
-  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px;
 }
 
 .category-list h2, .product-list header {
@@ -100,11 +99,13 @@ input {
 }
 
 .product-item {
-
   background-color: hsla(0, 0%, 100%, 1);
-
 }
-
+.product-item, .category-item {
+  margin: 15px;
+  max-width: 300px;
+  max-height: auto;
+}
 .description {
   padding: 1.5rem;
   text-align: center;
@@ -145,7 +146,7 @@ input {
 
 /* Reusable Component - Navigation Breadcrumbs */
 ul.breadcrumb {
-    padding: 10px;
+    padding-bottom: 50px;
     list-style: none;
     align-items: left;
 }
@@ -184,22 +185,17 @@ body {
   grid-template-columns: repeat(14, 1fr);
   grid-column-gap: 20px;
   background-color: hsla(30, 100%, 95%, 0.5);
-  padding: 20px;
+  padding: 20px 20px 50px 20px;
 }
 
-#main h2, main h2 {
+#main h2, main h2, main header, .breadcrumb {
   grid-column: 2 / span 12;
-  margin-bottom: 2rem;
+  padding: 2rem;
 }
 
 #main .button, main .button {
   box-sizing: border-box;
-  width: 14.375rem;
   padding: .875rem 20px;
-}
-
-.breadcrumb {
-  grid-column: 2 / span 12;
 }
 
 .product-list, .category-list {

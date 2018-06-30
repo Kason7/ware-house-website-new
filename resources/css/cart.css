@@ -10,19 +10,19 @@
 }
 
 .row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-column: 1/4;
   padding: 1.5rem 0rem 1.5rem 0rem;
   border-bottom: 1px solid hsla(0, 0%, 85%, 1);
   margin-left: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 #no-border {
   border-bottom: none;
 }
 
-input {
+.quantity input {
   width: 3rem;
   padding-left: 1rem;
 }
@@ -34,6 +34,8 @@ input {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   padding: 1rem 0rem;
+  display: grid;
+  grid-template-rows: 80px 45px;
 }
 
 .product-item h3 {
@@ -45,11 +47,24 @@ input {
   color: hsla(0, 0%, 29%, 1);
 }
 
+.row .image-container {
+  grid-column: 1 / span 1;
+}
+
 .description {
+  grid-column: 2 / span 1;
   padding: 1.5rem;
   text-align: left;
 }
-
+.description h3 {
+  text-align: left;
+}
+.quantity {
+  grid-column: 3 / span 1;
+}
+.quantity input {
+  border: 1px solid hsla(0, 0%, 85%, 1);
+}
 .total .description h3{
   float: left;
 }
@@ -60,7 +75,8 @@ input {
 
 #main .button, main .button {
   box-sizing: border-box;
-  padding: 0.875rem 5rem;
+  padding: 0.875rem 20%;
   border-radius: 54px;
   margin-left: 1rem;
+  color: white;
 }

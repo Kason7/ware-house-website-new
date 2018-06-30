@@ -41,6 +41,7 @@
       <a href="#">Patio</a>
       <a href="#">Tools</a>
       <h2>Checkout</h2>
+      <a href="show-board-page.html">Show board</a>
       <a href="cart.html">Cart</a>
   </div>
 
@@ -68,9 +69,12 @@
       </div>
       <div aria-label="Search" class="search-bar">
         <input type="text" name="search" placeholder="Search for items">
-        <a href="" class="icon"><img src="resources/img/search.svg"></a>
+        <a href="" class="icon"><img class="card" src="resources/img/search.svg"></a>
       </div>
-      <a href="cart.html" class="button cart">Cart <img src="resources/img/cart.svg"></a>
+      <div class="cart-show">
+        <a href="show-board-page.html" class="show-board card">Show <img src="resources/img/board-icon-2.png"></a>
+        <a href="cart.html" class="button cart card">Cart <img src="resources/img/cart.svg"></a>
+      </div>
     </div>
 
     <!-- Main menu -->
@@ -101,9 +105,11 @@
 
     <!-- Category section -->
 
-    <div class="category-list">
-
+    <header>
       <h2>Shop by category</h2>
+    </header>
+
+    <div class="category-list">
 
       <a href="living.html" class="category-item card">
         <div class="image-container">
@@ -133,11 +139,11 @@
 
     <!-- Products section -->
 
-    <section class="product-list">
+    <header class="recently-viewed-title">
+      <h2>Recently Viewed</h2>
+    </header>
 
-      <header class="recently-viewed-title">
-        <h2>Recently Viewed</h2>
-      </header>
+    <section class="product-list">
 
       <article class="product-item card">
         <a href="#">

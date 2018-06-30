@@ -1,7 +1,6 @@
 .shopping-cart {
   grid-column: 1 / span 1;
   display: grid;
-  width: 100%;
   grid-template-columns: 100%;
   grid-template-rows: repeat(4, 200px);
   padding: 0;
@@ -10,11 +9,12 @@
 }
 .row {
   grid-column: 1 / span 1;
-  display: grid;
+  display: flex;
   padding: 0;
   margin: 10px;
+  grid-template-columns: 100%;
 }
-.image-container, .description, img, .total, #main h2, main h2 {
+.image-container, .description, .total, #main h2, main h2, .quantity, .button, #main, main {
   grid-column: 1 / span 1;
 }
 .total {

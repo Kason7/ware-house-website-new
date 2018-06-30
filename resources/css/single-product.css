@@ -33,3 +33,11 @@
   display: grid;
   grid-template-columns: repeat(14, 1fr);
 }
+.button-add-to-show-board {
+  border: 1px solid #E87A42;
+  color: #E87A42;
+
+  padding: 12px 15px;
+  border-radius: 30px;
+  align-self: center;
+}

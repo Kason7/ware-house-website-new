@@ -65,9 +65,12 @@
       </div>
       <div aria-label="Search" class="search-bar">
         <input type="text" name="search" placeholder="Search for items">
-        <a href="" class="icon"><img src="resources/img/search.svg"></a>
+        <a href="" class="icon"><img class="card" src="resources/img/search.svg"></a>
       </div>
-      <a href="cart.html" class="button cart">Cart <img src="resources/img/cart.svg"></a>
+      <div class="cart-show">
+        <a href="show-board-page.html" class="show-board card">Show <img src="resources/img/board-icon-2.png"></a>
+        <a href="cart.html" class="button cart card">Cart <img src="resources/img/cart.svg"></a>
+      </div>
     </div>
 
     <!-- Main menu -->
@@ -120,6 +123,7 @@
 
         <div class="button-add-to-cart">
           <a href="#" class="button card">Add to Cart</a>
+          <a href="#" class="button-add-to-show-board card">Add to Show Board</a>
         </div>
 
       </div>
@@ -132,11 +136,11 @@
       </div>
     </article>
 
-    <section class="product-list">
+    <header class="related-products-title">
+      <h2>Related Products</h2>
+    </header>
 
-      <header class="related-products-title">
-        <h2>Related Products</h2>
-      </header>
+    <section class="product-list">
 
       <article class="product-item card">
         <a href="product-grey-sofa.html">

@@ -67,16 +67,26 @@
   align-self: center;
   padding: 14px;
 }
-.cart {
+.show-board {
+  grid-column: 11 / span 2;
+  border: 1px solid #E87A42;
+  color: #E87A42;
+}
+.cart-show {
   grid-column: 12 / span 2;
-  justify-self: end;
+  grid-row: 1 / span 1;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.cart, .show-board {
   display: flex;
   align-items: center;
   padding: 12px 15px;
   border-radius: 30px;
-  align-self: center;
+  margin-left: 10px;
 }
-.cart img {
+.cart img, .show-board img {
   padding-left: .625rem;
 }
 
